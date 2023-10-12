@@ -124,3 +124,7 @@ def download_csv(request):
         form = AuthenticationForm()
 
     return render(request, 'login.html', {'form': form})
+
+
+def trial(request):
+    return render(request, 'trial.html')

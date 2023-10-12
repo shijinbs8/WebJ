@@ -83,6 +83,7 @@
             padding: 10px;
             box-sizing: border-box;
             border-top: 1px solid #ccc;
+            
         }
     
         .input-bar input {
@@ -120,6 +121,11 @@
         .h6{
             font-size: small;
         }
+        #social:hover {
+        color: #0056b3; /* New background color on hover */
+    }
+        
+        
         
     </style>
 </head>
@@ -129,6 +135,7 @@
         <i class="fas fa-search"></i>
         <i class="fas fa-link"></i>
     </div>
+    
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style="font-size: xx-large;">Jezt</a>
@@ -138,22 +145,22 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-right: 40px; padding: 10px; font-size: larger;">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'index' %}">Home</a>
+                <a class="nav-link" href="{%url 'index' %}" id="social">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'about-us' %}">About</a>
+                <a class="nav-link" href="{%url 'about-us' %}" id="social">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Team</a>
+                <a class="nav-link" href="#" id="social">Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'chatbot' %}">Try Us</a>
+                <a class="nav-link" href="{%url 'chatbot' %}" id="social">Try Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'technology' %}">Technology</a>
+                <a class="nav-link" href="{%url 'technology' %}" id="social">Technology</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'contact-us' %}">Contact</a>
+                <a class="nav-link" href="{%url 'contact-us' %}" id="social">Contact</a>
               </li>
             </ul>
           </div>
@@ -186,14 +193,15 @@
     <div class="col-1"></div>
     </div>
     </div>
+    
     <div class="input-bar" style="  background: rgb(61,59,59)">
         
         <form id="message-form" method="POST">
             {% csrf_token %}
-            <input type="text" name="user_input" placeholder="Enter your message" style="width: 600px;">
+            <input type="text" name="user_input" placeholder="Enter your message" style=" color: #eee;">
             <!-- <input id="send-btn" type="submit"  ><i class='bx bx-send'></i>  -->
-            <button type="submit"  id="send-btn" ><i class='bx bx-send'></i> </button>
-            <a href="{% url 'clear_chat_history' %}" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> </a>
+            <button type="submit"  id="send-btn" style="background-color: #2074E3;"><i class='bx bx-send' ></i> </button>
+            <a href="{% url 'clear_chat_history' %}" class="btn btn-danger"><i class='bx bx-refresh' undefined ></i></i> </a>
             
         </form>
     

@@ -26,4 +26,5 @@ urlpatterns = [
     path('clear-chat-history/', views.clear_chat_history, name='clear_chat_history'),
     path('contact-us/',views.request_callback, name='contact-us'),
     path('csv/', views.download_csv, name='download_csv'),
+    path('try',views.trial, name='trial'),
 ]

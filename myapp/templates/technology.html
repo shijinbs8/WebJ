@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/05a24c4f06.js" crossorigin="anonymous"></script>
 
     <!-- styles -->
     <link href="{%static 'css/plugins.css' %}" rel="stylesheet" type="text/css">
@@ -127,6 +128,9 @@
             
             /* Adjust spacing between cards */
         }
+        #social:hover {
+        color: #0056b3; /* New background color on hover */
+    }
     </style>
 </head>
 
@@ -161,22 +165,22 @@
                 style="margin-right: 40px; padding: 10px; font-size: larger;">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'index' %}">Home</a>
+                        <a class="nav-link" href="{%url 'index' %}" id="social">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'about-us' %}">About</a>
+                        <a class="nav-link" href="{%url 'about-us' %}" id="social">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Team</a>
+                        <a class="nav-link" href="#" id="social">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Try Us</a>
+                        <a class="nav-link" href="{%url 'chatbot' %}" id="social">Try Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'technology' %}">Technology</a>
+                        <a class="nav-link" href="{%url 'technology' %} " id="social">Technology</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{%url 'contact-us' %}">Contact</a>
+                        <a class="nav-link" href="{%url 'contact-us' %}" id="social">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -217,7 +221,7 @@
                 <!-- medium-title start -->
                 <h2 data-animation-container class="medium-title">
                     <span data-animation-child class="title-fill" data-animation="title-fill-anim"
-                        data-text="Fine Folks">Fine Folks</span><br>
+                        data-text="Fine Folks"></span><br>
                     <span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim"
                         data-text="Our">Our</span><br>
                     <span data-animation-child class="title-fill tr-delay02" data-animation="title-fill-anim"
@@ -225,40 +229,9 @@
                 </h2>
                 <!-- medium-title end -->
 
-                <!-- client-list start -->
+                 <!-- client-list start -->
                 <div class="skill-content">
-                    <!-- <div class="row">
-                        <i style="color: #2074e3;"class='bx bxl-python'></i>
-                        <h3 style="color: #2074e3;">Machine Learning</h3>
-                    </div>
-                    <div class="row">
-                        <i style="color: #2074e3;"class='bx bxl-django'></i>
-                        <h3 style="color: #2074e3;">Artificial Intelligence</h3>
-                    </div>
-                    <div class="row">
-                        <i style="color: #2074e3;" class='bx bxl-javascript'></i>
-                        <h3 style="color: #2074e3;">Robotics</h3>
-                    </div>
-                    <div class="row">
-                        <i style="color: #2074e3;" class='bx bxl-github'></i>
-                        <h3 style="color: #2074e3;">Internet of Things</h3>
-                    </div>
-                    <div class="row">
-                        <i style="color: #2074e3;"class='bx bxl-adobe'></i>
-                        <h3 style="color: #2074e3;">Web Applications</h3>
-                    </div>
-                    <div class="row">
-                        <i style="color: #2074e3;"class='bx bxl-figma'></i>
-                        <h3 style="color: #2074e3;">Cloud Computing</h3>
-                    </div>
-                    <div class="row">
-                        <i style="color: #2074e3;" class='bx bxl-html5'></i>
-                        <h3 style="color: #2074e3;">HTML</h3>
-                    </div>
-                    <div class="row">
-                        <i style="color: #2074e3;"class='bx bxl-css3' ></i>
-                        <h3 style="color: #2074e3;">Css</h3>
-                    </div> -->
+                    
 
                     <div class="slider-container">
                         <div class="cards">
@@ -287,8 +260,11 @@
 
                 </div>
                 <!-- client-list end -->
-            </div>
+            </div> 
             <!-- container end -->
+
+
+            
         </section>
 
 
@@ -332,31 +308,20 @@
             <div class="four-columns bottom-padding-60">
                 <div class="content-left-right-margin-10 footer-center-mobile">
                     <ul class="footer-information text-color-4">
-                        <li><i class="far fa-envelope"></i><a href="#" class="xsmall-title-oswald">.</a></li>
-                        <li><i class="fas fa-mobile-alt"></i><a href="#" class="xsmall-title-oswald">Phone Number</a>
-                        </li>
-                        <li><i class="fas fa-map-marker-alt"></i><a href="#"
-                                class="xsmall-title-oswald text-height-17">Address<br><span>East Victoria 2006
-                                    UK</span></a></li>
+                        <li><i class="far fa-envelope" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">jezt.technologies@gmail.com</jezt.technologies></a></li>
+                        <li><i class="fas fa-mobile-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Phone Number</a></li>
+                        <li><i class="fas fa-map-marker-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Kakkanad<br><span>Kerala</span></a></li>
                     </ul>
                 </div>
             </div>
             <!-- column end -->
             <!-- column start -->
             <div class="three-columns bottom-padding-60">
-                <div class="content-left-margin-10">
-                    <ul class="footer-social">
-                        <li>
-                            <div class="flip-btn-box">
-                                <a href="#" class="flip-btn pointer-small" data-text="Instagram">Instagram</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flip-btn-box">
-                                <a href="#" class="flip-btn pointer-small" data-text="Facebook">Facebook</a>
-                            </div>
-                        </li>
-
+                 <div class="content-left-right-margin-10 footer-center-mobile">
+                    <ul class="footer-information text-color-4">
+                        <li><i class='bx bxl-instagram' style="font-size: x-large;" id="social"></i><a href="#" class="" style="font-size: medium;" id="social">Instagram</a></li>
+                        <li><i class='bx bxl-linkedin-square' style="font-size: x-large;" id="social"></i><a href="#" style="font-size: medium;" id="social">Linked in</a></li>
+                        <li><i class='bx bxl-facebook-circle' style="font-size: x-large;" id="social"></i><a href="#" style="font-size: medium;" id="social"> Facebook</a></li>
                     </ul>
                 </div>
             </div>
@@ -408,6 +373,8 @@
 
 
     </script>
+
+    
 </body>
 
 </html>

@@ -13,7 +13,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/05a24c4f06.js" crossorigin="anonymous"></script>
     <!-- styles -->
     <link href="{%static 'css/plugins.css' %}" rel="stylesheet" type="text/css">
     <link href="{%static 'css/style.css' %}" rel="stylesheet" type="text/css">
@@ -100,6 +100,9 @@ body {
             
             /* Adjust spacing between cards */
         }
+        #social:hover {
+        color: #0056b3; /* New background color on hover */
+    }
 
     </style>
 </head>
@@ -133,22 +136,22 @@ body {
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-right: 40px; padding: 10px; font-size: larger;">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'index' %}">Home</a>
+                <a class="nav-link" href="{%url 'index' %}" id="social">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'about-us' %}">About</a>
+                <a class="nav-link" href="{%url 'about-us' %}" id="social">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Our Team</a>
+                <a class="nav-link" href="#" id="social">Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'chatbot'%}">Try Us</a>
+                <a class="nav-link" href="{%url 'chatbot'%}" id="social">Try Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'technology' %}">Technology</a>
+                <a class="nav-link" href="{%url 'technology' %}" id="social">Technology</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{%url 'contact-us' %}">Contact</a>
+                <a class="nav-link" href="{%url 'contact-us' %}" id="social">Contact</a>
               </li>
             </ul>
       
@@ -311,55 +314,7 @@ body {
             </a>
             <!-- scroll-btn end -->
         </section>
-        <!-- home-slider end -->
-
-        <!-- flex-min-height-box start -->
-        <!-- <section id="down" class="dark-bg-1 flex-min-height-box"> -->
-            <!-- flex-min-height-inner start -->
-            <!-- <div class="flex-min-height-inner"> -->
-                <!-- container start -->
-                <!-- <div class="container small top-bottom-padding-120"> -->
-                    <!-- flex-container start -->
-                    <!-- <div data-animation-container class="flex-container"> -->
-                        <!-- column start -->
-                        <!-- <div class="twelve-columns text-center">
-                            <h2 class="large-title text-height-12">
-                                <span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="We are Creative">We are Creative</span><br>
-                                <span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim" data-text="We are Jezt">We are Jezt</span>
-                            </h2>
-                        </div> -->
-                        <!-- column end -->
-                        <!-- column start -->
-                        <!-- <div class="six-columns">
-                            <div class="content-right-margin-20">
-                                <p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay02" data-animation="fade-anim">
-                                    JEZT Technologies was founded with a visionary goal - to harness the limitless potential of AI and Robotics to create solutions that enhance lives, elevate businesses, and redefine industries. From its inception, the company embarked on a journey fueled by a deep commitment to innovation and an unwavering belief in the power of technology to drive positive change.
-                                </p>
-                            </div>
-                        </div> -->
-                        <!-- column end -->
-                        <!-- column start -->
-                        <!-- <div class="six-columns">
-                            <div class="content-left-margin-20">
-                                <p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay03" data-animation="fade-anim">As a dedicated artificial intelligence company, Jezt AI is at the forefront of utilizing facial recognition technology to its maximum potential. Their specialized expertise in AI has enabled them to develop cutting-edge solutions that leverage facial recognition for a variety of applications. From enhancing security protocols to creating personalized user experiences, Jezt AI's commitment to innovation and excellence sets them apart in the field. </p>
-                            </div>
-                        </div> -->
-                        <!-- column end -->
-                        <!-- column start -->
-                        <!-- <div class="twelve-columns text-center">
-                            <p data-animation-child class="p-letter-style text-color-4 text-height-13 fade-anim-box tr-delay04" data-animation="fade-anim">Jezt Technologies</p>
-                        </div> -->
-                        <!-- column end -->
-                    <!-- </div> -->
-                    <!-- flex-container end -->
-                <!-- </div> -->
-                <!-- container end -->
-            <!-- </div> -->
-            <!-- flex-min-height-inner end -->
-        <!-- </section> -->
-        <!-- flex-min-height-box end -->
-
-        <!-- section start -->
+        
         <section class="light-bg-1 bottom-padding-30 top-padding-120" data-midnight="black">
             <!-- container start -->
             <div data-animation-container class="container small bottom-padding-60 text-center">
@@ -550,7 +505,7 @@ body {
                     <!-- medium-title start -->
                     <h2 data-animation-container class="medium-title">
                         <span data-animation-child class="title-fill" data-animation="title-fill-anim"
-                            data-text="Fine Folks">Fine Folks</span><br>
+                            data-text="Fine Folks"></span><br>
                         <span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim"
                             data-text="Our">Our</span><br>
                         <span data-animation-child class="title-fill tr-delay02" data-animation="title-fill-anim"
@@ -560,39 +515,7 @@ body {
     
                     <!-- client-list start -->
                     <div class="skill-content">
-                        <!-- <div class="row">
-                            <i style="color: #2074e3;"class='bx bxl-python'></i>
-                            <h3 style="color: #2074e3;">Machine Learning</h3>
-                        </div>
-                        <div class="row">
-                            <i style="color: #2074e3;"class='bx bxl-django'></i>
-                            <h3 style="color: #2074e3;">Artificial Intelligence</h3>
-                        </div>
-                        <div class="row">
-                            <i style="color: #2074e3;" class='bx bxl-javascript'></i>
-                            <h3 style="color: #2074e3;">Robotics</h3>
-                        </div>
-                        <div class="row">
-                            <i style="color: #2074e3;" class='bx bxl-github'></i>
-                            <h3 style="color: #2074e3;">Internet of Things</h3>
-                        </div>
-                        <div class="row">
-                            <i style="color: #2074e3;"class='bx bxl-adobe'></i>
-                            <h3 style="color: #2074e3;">Web Applications</h3>
-                        </div>
-                        <div class="row">
-                            <i style="color: #2074e3;"class='bx bxl-figma'></i>
-                            <h3 style="color: #2074e3;">Cloud Computing</h3>
-                        </div>
-                        <div class="row">
-                            <i style="color: #2074e3;" class='bx bxl-html5'></i>
-                            <h3 style="color: #2074e3;">HTML</h3>
-                        </div>
-                        <div class="row">
-                            <i style="color: #2074e3;"class='bx bxl-css3' ></i>
-                            <h3 style="color: #2074e3;">Css</h3>
-                        </div> -->
-    
+                      
                         <div class="slider-container">
                             <div class="cards">
                                 <div class="card">
@@ -628,24 +551,7 @@ body {
     
     
         </main>
-        <!-- animsition-overlay end --> 
-
-        <!-- light-bg-2 start -->
-   
-        <!-- light-bg-2 end -->
-
-        <!-- video-content-bg start -->
-        <!-- <div class="video-content-bg" style="background-image:url(assets/images/backgrounds/business-calligraphy-chinese-lanterns-1455969.jpg)">
-            <div class="bg-overlay"></div>
-            <a href="https://www.youtube.com/watch?v=9TGlc0Fufgk" class="video-play-button popup-youtube pointer-large">
-					<span></span>
-				</a>
-        </div> -->
-        <!-- video-content-bg end -->
-
-        <!-- latest-news start -->
-    
-        <!-- latest-news end -->
+        
     </main>
     <!-- animsition-overlay end -->
 
@@ -678,28 +584,20 @@ body {
             <div class="four-columns bottom-padding-60">
                 <div class="content-left-right-margin-10 footer-center-mobile">
                     <ul class="footer-information text-color-4">
-                        <li><i class="far fa-envelope"></i><a href="#" class="xsmall-title-oswald">.</a></li>
-                        <li><i class="fas fa-mobile-alt"></i><a href="#" class="xsmall-title-oswald">Phone Number</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i><a href="#" class="xsmall-title-oswald text-height-17">Address<br><span>East Victoria 2006 UK</span></a></li>
+                        <li><i class="far fa-envelope" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">jezt.technologies@gmail.com</jezt.technologies></a></li>
+                        <li><i class="fas fa-mobile-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Phone Number</a></li>
+                        <li><i class="fas fa-map-marker-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Kakkanad<br><span>Kerala</span></a></li>
                     </ul>
                 </div>
             </div>
             <!-- column end -->
             <!-- column start -->
             <div class="three-columns bottom-padding-60">
-                <div class="content-left-margin-10">
-                    <ul class="footer-social">
-                        <li>
-                            <div class="flip-btn-box">
-                                <a href="#" class="flip-btn pointer-small" data-text="Instagram">Instagram</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flip-btn-box">
-                                <a href="#" class="flip-btn pointer-small" data-text="Facebook">Facebook</a>
-                            </div>
-                        </li>
-                
+                 <div class="content-left-right-margin-10 footer-center-mobile">
+                    <ul class="footer-information text-color-4">
+                        <li><i class='bx bxl-instagram' style="font-size: x-large;" id="social"></i><a href="#" class="" style="font-size: medium;" id="social">Instagram</a></li>
+                        <li><i class='bx bxl-linkedin-square' style="font-size: x-large;" id="social"></i><a href="#" style="font-size: medium;" id="social">Linked in</a></li>
+                        <li><i class='bx bxl-facebook-circle' style="font-size: x-large;" id="social"></i><a href="#" style="font-size: medium;" id="social"> Facebook</a></li>
                     </ul>
                 </div>
             </div>
