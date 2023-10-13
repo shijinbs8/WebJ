@@ -75,7 +75,8 @@
         .slider-container {
             width:10000px;
             /* Adjust this to your desired width */
-            overflow: hidden;
+            /* overflow: hidden; */
+            animation: slide 15s linear infinite; 
         }
 
         .cards {
@@ -86,7 +87,7 @@
         }
 
         .card {
-            width: 400px;
+            width: 300px;
             /* Adjust the width as needed */
            
             /* Adjust the height as needed */
@@ -95,12 +96,25 @@
             border: 1px solid b;
             text-align: center;
             margin-right: 10px;
-            
+            transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transitions for transform and box-shadow */
+            transform-origin: center center ; 
             /* Adjust spacing between cards */
         }
+        .card:last-child {
+            margin-right: 0; /* Remove margin from the last card to prevent a gap */
+        }
+
+        .card:hover {
+        /* background-color: #3498db;  */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+        transform: scale(1.05);
+        
+    }
+
         #social:hover {
         color: #0056b3; /* New background color on hover */
     }
+    
 
     </style>
 </head>
@@ -189,7 +203,6 @@
                             <div class="six-columns six-offset">
                                 <div class="content-left-margin-40">
                                     <h2 class="large-title-bold">
-                                        Jezt AI maximizes facial recognition's potential
                                         <span class="slider-title-fill slider-tr-delay01" data-text="We generate">We generate</span><br>
                                         <span class="slider-title-fill slider-tr-delay02" data-text="creative &">creative &</span><br>
                                         <span class="slider-title-fill slider-tr-delay03" data-text="innovative ideas">innovative ideas</span>
@@ -219,7 +232,7 @@
                 <!-- swiper-slide start -->
                 <div class="swiper-slide flex-min-height-box home-slide">
                     <!-- slide-bg -->
-                    <div class="slide-bg" style="background-image:url('{%static 'images/backgrounds/m5.png' %}')"></div>
+                    <div class="slide-bg" style="background-image:url('{% static 'images/backgrounds/m5.png' %}')"></div>
                     <!-- home-slider-content start -->
                     <div class="home-slider-content flex-min-height-inner dark-bg-2">
                         <!-- flex-container start -->
@@ -507,7 +520,7 @@
                         <span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim"
                             data-text="Our">Our</span><br>
                         <span data-animation-child class="title-fill tr-delay02" data-animation="title-fill-anim"
-                            data-text="Technologies">Technologies</span>
+                            data-text="Expertise">Expertise</span>
                     </h2>
                     <!-- medium-title end -->
     
@@ -583,7 +596,7 @@
                 <div class="content-left-right-margin-10 footer-center-mobile">
                     <ul class="footer-information text-color-4">
                         <li><i class="far fa-envelope" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">jezt.technologies@gmail.com</jezt.technologies></a></li>
-                        <li><i class="fas fa-mobile-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Phone Number</a></li>
+                        <li><i class="fas fa-mobile-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">+91 8921305309</a></li>
                         <li><i class="fas fa-map-marker-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Kakkanad<br><span>Kerala</span></a></li>
                     </ul>
                 </div>
@@ -614,11 +627,7 @@
     <script src="{%static 'js/plugins.js' %}"></script>
     <script src="{%static 'js/main.js' %}"></script>
     <script>
-        // script.js
-        // script.js
-        // script.js
-        // script.js
-        // script.js
+  
         document.addEventListener("DOMContentLoaded", function () {
             const cardsContainer = document.querySelector(".cards");
             const cards = document.querySelectorAll(".card");

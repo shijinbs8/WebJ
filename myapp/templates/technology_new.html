@@ -103,31 +103,48 @@
         }
 
         .slider-container {
-            width: 5000px;
-            /* Adjust this to your desired width */
-            overflow: hidden;
-        }
-
-        .cards {
-            display: flex;
-            text-align: center;
-            transition: transform 0.5s ease;
-            /* Add smooth sliding transition */
-        }
-
-        .card {
-            width: 300px;
-            /* Adjust the width as needed */
-            height: 250px;
-            /* Adjust the height as needed */
-            padding: 70px;
-            background-color: #f1f1f1;
-            border: 1px solid #ddd;
-            text-align: center;
-            margin-right: 10px;
             
-            /* Adjust spacing between cards */
-        }
+    width: 4000px; /* Adjust this to your desired width or use a fixed width */
+    /* overflow: hidden; */
+    position: relative; /* Added for absolute positioning of cards */
+    animation: slide 15s linear infinite; 
+}
+
+.cards {
+    display: flex;
+    text-align: center;
+    transition: transform 0.5s ease;
+    /* Add smooth sliding transition */
+}
+
+.card {
+    width: 300px; /* Adjust the width as needed */
+    padding: 70px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px; /* Adjust spacing between cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transitions for transform and box-shadow */
+    transform-origin: center center ; 
+}
+.card:hover {
+        /* background-color: #3498db;  */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+        transform: scale(1.05);
+        
+    }
+
+.card:last-child {
+    margin-right: 0; /* Remove margin from the last card to prevent a gap */
+}
+
+/* Added styles for the continuous loop effect */
+.cards:after {
+    content: "";
+    width: 400px; /* Width of each card */
+    flex-shrink: 0;
+}
+
         #social:hover {
         color: #0056b3; /* New background color on hover */
     }
@@ -171,7 +188,7 @@
                         <a class="nav-link" href="{%url 'about-us' %}" id="social">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="social">Our Team</a>
+                        <a class="nav-link" href="{%url 'team' %}" id="social">Our Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{%url 'chatbot' %}" id="social">Try Us</a>
@@ -236,22 +253,22 @@
                     <div class="slider-container">
                         <div class="cards">
                             <div class="card">
-                                <h1>Machine Learning</h1>
+                                <h3>Machine Learning</h3>
                             </div>
                             <div class="card">
-                                <h1>Artificial Intelligence</h1>
+                                <h3>Artificial Intelligence</h3>
                             </div>
                             <div class="card">
-                                <h1>Robotics</h1>
+                                <h3>Robotics</h3>
                             </div>
                             <div class="card">
-                                <h1>Internet of Things</h1>
+                                <h3>Internet of Things</h3>
                             </div>
                             <div class="card">
-                                <h1>Web Applications</h1>
+                                <h3>Web Applications</h3>
                             </div>
                             <div class="card">
-                                <h1>Cloud Computing</h1>
+                                <h3>Cloud Computing</h3>
                             </div>
 
                             <!-- Add more cards as needed -->
@@ -309,7 +326,7 @@
                 <div class="content-left-right-margin-10 footer-center-mobile">
                     <ul class="footer-information text-color-4">
                         <li><i class="far fa-envelope" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">jezt.technologies@gmail.com</jezt.technologies></a></li>
-                        <li><i class="fas fa-mobile-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Phone Number</a></li>
+                        <li><i class="fas fa-mobile-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">+91 8921305309</a></li>
                         <li><i class="fas fa-map-marker-alt" style="font-size: medium;" id="social"></i><a href="#" style="font-size: small;" id="social">Kakkanad<br><span>Kerala</span></a></li>
                     </ul>
                 </div>
@@ -347,27 +364,37 @@
         // script.js
         // script.js
         document.addEventListener("DOMContentLoaded", function () {
-            const cardsContainer = document.querySelector(".cards");
-            const cards = document.querySelectorAll(".card");
-            const cardWidth = cards[0].offsetWidth + 10; // Adjust for margin-right
-            let currentIndex = 0;
+    const cardsContainer = document.querySelector(".cards");
+    const cards = document.querySelectorAll(".card");
+    const cardWidth = cards[0].offsetWidth + 10; // Adjust for margin-right
+    const numCards = cards.length;
+    let currentIndex = 0;
 
-            function showCards(index) {
-                const translateX = -index * cardWidth;
-                cardsContainer.style.transform = `translateX(${translateX}px)`;
-            }
+    function showCards(index) {
+        const translateX = -index * cardWidth;
+        cardsContainer.style.transform = `translateX(${translateX}px)`;
+    }
 
-            function slide() {
-                currentIndex++;
-                if (currentIndex >= cards.length) {
-                    currentIndex = 0;
-                }
-                showCards(currentIndex);
-            }
-
+    function slide() {
+        currentIndex++;
+        if (currentIndex >= numCards) {
+            // Reset the index to 0 if it goes beyond the number of cards
+            currentIndex = 0;
+            // Reset the transition to create a smooth continuous loop
+            cardsContainer.style.transition = "none";
             showCards(currentIndex);
-            setInterval(slide, 3000); // Change card every 3 seconds (adjust as needed)
-        });
+            // Force a reflow (this line is important for the transition reset to work)
+            cardsContainer.offsetHeight;
+            // Restore the transition for smooth sliding
+            cardsContainer.style.transition = "";
+        }
+        showCards(currentIndex);
+    }
+
+    showCards(currentIndex);
+    setInterval(slide, 3000); // Change card every 3 seconds (adjust as needed)
+});
+
 
 
 

@@ -21,7 +21,7 @@ def about_us(request):
     return render(request,'about_us.html')
 
 def technology(request):
-    return render(request,'Technology.html')
+    return render(request,'technology_new.html')
 
 
 # Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI API key
