@@ -48,7 +48,7 @@ def Ai(request):
 
         # return JsonResponse({"response": response})  # Return JSON response
 
-    return render(request, 'a.html', {'messages': messages})
+    return render(request, 'Ai_Teacher.html', {'messages': messages})
 
 def clear_chat_history(request):
     ChatMessage.objects.all().delete()  # Delete all ChatMessage objects

@@ -1275,7 +1275,7 @@ input[type="submit"]:hover {
 /*--------------------------------------------------------------
 2. Custom mouse cursor
 --------------------------------------------------------------*/
-
+/* 
 * {
     cursor: none;
 }
@@ -1305,7 +1305,7 @@ input[type="submit"]:hover {
     border-radius: 50%;
     background: #ef0d33;
     overflow: hidden;
-}
+} */
 
 body.out .pointer {
     width: 0;
