@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jezt</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- styles -->
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        
+    .skill-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-gap:2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+    cursor: pointer;
+
+}
+.row{
+    background: #1c1818;
+    padding: 60px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .35s;
+}
+.row i{
+    color: var(--main-color);
+    margin-bottom:20px;
+    font-size:3rem ;
+    text-align: center;
+    
+}
+.row h3{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.row:hover{
+    transform: translateY(-10px);
+}
+    </style>
+</head>
+
+<body class="loader">
+    <!-- loading start -->
+    <div class="loading">
+        <h3 class="logo-loading">Jezt</h3>
+    </div>
+    <!-- loading end -->
+
+    <!-- pointer start -->
+    <div class="pointer" id="pointer">
+        <i class="fas fa-long-arrow-alt-right"></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-link"></i>
+    </div>
+    <!-- pointer end -->
+
+    <!-- to-top-btn start -->
+    <a class="to-top-btn pointer-small" href="#up">
+			  <span class="to-top-arrow"></span>		    
+		</a>
+    <!-- to-top-btn end -->
+
+    <!-- header start -->
+    <header class="fixed-header">
+        <!-- header-flex-box start -->
+        <div class="header-flex-box">
+            <!-- logo start -->
+            <a href="index.html" class="logo pointer-large animsition-link">
+                <div class="logo-img-box">
+                    <!-- <img class="logo-white" src="assets/images/logo/logo-white.png" alt="logo">
+                    <img class="logo-black" src="assets/images/logo/logo-black.png" alt="logo"> -->
+                    <h1 style="color:white;">Jezt</h1>
+                </div>
+
+            </a>
+            <!-- logo end -->
+
+            <!-- menu-open start -->
+            <!-- <div class="menu-open pointer-large">
+                <span class="hamburger"></span>
+            </div> -->
+            <!-- menu-open end -->
+        </div>
+        <!-- header-flex-box end -->
+    </header>
+    <!-- header end -->
+
+    <!-- nav-container start -->
+   
+    <!-- nav-container end -->
+
+    <!-- animsition-overlay start -->
+    <main class="animsition-overlay" data-animsition-overlay="true">
+        <!-- home-slider start -->
+        <section class="home-slider" id="up">
+            <!-- swiper-wrapper start -->
+            <div class="swiper-wrapper">
+                <!-- swiper-slide start -->
+                <div class="swiper-slide flex-min-height-box home-slide">
+                    <!-- slide-bg -->
+                    <div class="slide-bg overlay-loading2 overlay-dark-bg-1" style="background-image:url(assets/images/backgrounds/hh1.jpeg)"></div>
+                    <!-- home-slider-content start -->
+                    <div class="home-slider-content flex-min-height-inner dark-bg-1">
+                        <!-- flex-container start -->
+                        <div class="container top-bottom-padding-120 flex-container response-999">
+                            <!-- column start -->
+                            <div class="six-columns six-offset">
+                                <div class="content-left-margin-40">
+                                    <h2 class="large-title-bold">
+                                        Jezt AI maximizes facial recognition's potentia
+                                        <span class="slider-title-fill slider-tr-delay01" data-text="We generate">We generate</span><br>
+                                        <span class="slider-title-fill slider-tr-delay02" data-text="creative &">creative &</span><br>
+                                        <span class="slider-title-fill slider-tr-delay03" data-text="novation ideas">novation ideas</span>
+                                    </h2>
+                                    <p class="p-style-bold-up text-height-20 d-flex-wrap">
+                                        <!-- <span class="slider-title-fill slider-tr-delay04" data-text="XOXO fam brunch">Jezt Technologies</span>
+                                        <span class="slider-title-fill slider-tr-delay05" data-text="retro intelligentsia"></span>
+                                        <span class="slider-title-fill slider-tr-delay06" data-text="live-edge vegan">live-edge vegan</span> -->
+                                    </p>
+                                    <div class="slider-fade slider-tr-delay07 top-margin-30">
+                                        <div class="border-btn-box border-btn-red pointer-large">
+                                            <div class="border-btn-inner">
+                                                <a href="#" class="border-btn" data-text="Read more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column end -->
+                        </div>
+                        <!-- flex-container end -->
+                    </div>
+                    <!-- home-slider-content end -->
+                </div>
+                <!-- swiper-slide end -->
+                <!-- swiper-slide start -->
+                <div class="swiper-slide flex-min-height-box home-slide">
+                    <!-- slide-bg -->
+                    <div class="slide-bg" style="background-image:url(assets/images/backgrounds/a1.avif)"></div>
+                    <!-- home-slider-content start -->
+                    <div class="home-slider-content flex-min-height-inner dark-bg-2">
+                        <!-- flex-container start -->
+                        <div class="container top-bottom-padding-120 flex-container response-999">
+                            <!-- column start -->
+                            <div class="six-columns six-offset">
+                                <div class="content-left-margin-40">
+                                    <h2 class="slider-overlay2 medium-title red-color">Welcome Jezt</h2>
+                                    <h3 class="large-title-bold text-color-4">
+                                        <span class="slider-overlay2 slider-tr-delay01">Best Solutions</span><br>
+                                        <span class="slider-overlay2 slider-tr-delay02">& ideas for</span><br>
+                                        <span class="slider-overlay2 slider-tr-delay03">You Business</span>
+                                    </h3>
+                                    <div class="slider-fade slider-tr-delay04 top-margin-30">
+                                        <div class="border-btn-box pointer-large">
+                                            <div class="border-btn-inner">
+                                                <a href="#" class="border-btn" data-text="Read more">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column end -->
+                        </div>
+                        <!-- flex-container end -->
+                    </div>
+                    <!-- home-slider-content end -->
+                </div>
+                <!-- swiper-slide end -->
+                <!-- swiper-slide start -->
+                <div class="swiper-slide flex-min-height-box home-slide red-slide">
+                    <!-- slide-bg -->
+                    <div class="slide-bg" style="background-image:url(assets/images/backgrounds/B1.avif)"></div>
+                    <!-- home-slider-content start -->
+                    <div class="home-slider-content flex-min-height-inner red-bg">
+                        <!-- flex-container start -->
+                        <div class="container top-bottom-padding-120 flex-container response-999">
+                            <!-- column start -->
+                            <div class="six-columns">
+                                <h2 class="large-title-bold">
+                                    <span class="slider-title-fill slider-tr-delay01" data-text="We’r Provided">We’r Provided</span><br>
+                                    <span class="slider-title-fill slider-tr-delay02" data-text="Best Digital">Best Digital</span><br>
+                                    <span class="slider-title-fill slider-tr-delay03" data-text="Services">Services</span>
+                                </h2>
+                                <div class="small-title-oswald text-height-20 d-flex-wrap top-margin-20">
+                                    <span class="slider-title-fill slider-tr-delay04 top-margin-10" data-text="Creative team">Creative team</span>
+                                    <span class="slider-title-fill slider-tr-delay05 top-margin-10" data-text="Innovation ideas">Innovation ideas</span>
+                                    <span class="slider-title-fill slider-tr-delay06 top-margin-10" data-text="Best services">Best services</span>
+                                </div>
+                                <div class="arrow-btn-box slider-fade slider-tr-delay06 top-margin-30">
+                                    <a href="#" class="arrow-btn pointer-large">Read more</a>
+                                </div>
+                            </div>
+                            <!-- column end -->
+                        </div>
+                        <!-- flex-container end -->
+                    </div>
+                    <!-- home-slider-content end -->
+                </div>
+                <!-- swiper-slide end -->
+            </div>
+            <!-- swiper-wrapper end -->
+
+            <!-- swiper-button-next start -->
+            <div class="swiper-button-next">
+                <div class="slider-arrow-next-box">
+                    <span class="slider-arrow-next"></span>
+                </div>
+            </div>
+            <!-- swiper-button-next end -->
+            <!-- swiper-button-prev start -->
+            <div class="swiper-button-prev">
+                <div class="slider-arrow-prev-box">
+                    <span class="slider-arrow-prev"></span>
+                </div>
+            </div>
+            <!-- swiper-button-prev end -->
+
+            <!-- swiper-pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- scroll-btn start -->
+            <a href="#down" class="scroll-btn pointer-large">
+                <div class="scroll-arrow-box">
+                    <span class="scroll-arrow"></span>
+                </div>
+                <div class="scroll-btn-flip-box">
+                    <span class="scroll-btn-flip" data-text="Scroll">Scroll</span>
+                </div>
+            </a>
+            <!-- scroll-btn end -->
+        </section>
+        <!-- home-slider end -->
+
+        <!-- flex-min-height-box start -->
+        <section id="down" class="dark-bg-1 flex-min-height-box">
+            <!-- flex-min-height-inner start -->
+            <div class="flex-min-height-inner">
+                <!-- container start -->
+                <div class="container small top-bottom-padding-120">
+                    <!-- flex-container start -->
+                    <div data-animation-container class="flex-container">
+                        <!-- column start -->
+                        <div class="twelve-columns text-center">
+                            <h2 class="large-title text-height-12">
+                                <span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="We are Creative">We are Creative</span><br>
+                                <span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim" data-text="We are Jezt">We are Jezt</span>
+                            </h2>
+                        </div>
+                        <!-- column end -->
+                        <!-- column start -->
+                        <div class="six-columns">
+                            <div class="content-right-margin-20">
+                                <p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay02" data-animation="fade-anim">Jezt AI, a specialized artificial intelligence company, excels in harnessing the capabilities of facial recognition technology.Their expertise in AI allows them to optimize facial recognition for security and user experiences, making them a standout in the industry. With a focus on innovation, Jezt AI ensures that organizations can leverage the full potential of this advanced technology, reaffirming their position as a leading player in the AI landscape</p>
+                            </div>
+                        </div>
+                        <!-- column end -->
+                        <!-- column start -->
+                        <div class="six-columns">
+                            <div class="content-left-margin-20">
+                                <p data-animation-child class="p-style-medium text-color-5 fade-anim-box tr-delay03" data-animation="fade-anim">As a dedicated artificial intelligence company, Jezt AI is at the forefront of utilizing facial recognition technology to its maximum potential. Their specialized expertise in AI has enabled them to develop cutting-edge solutions that leverage facial recognition for a variety of applications. From enhancing security protocols to creating personalized user experiences, Jezt AI's commitment to innovation and excellence sets them apart in the field. </p>
+                            </div>
+                        </div>
+                        <!-- column end -->
+                        <!-- column start -->
+                        <div class="twelve-columns text-center">
+                            <p data-animation-child class="p-letter-style text-color-4 text-height-13 fade-anim-box tr-delay04" data-animation="fade-anim">Jezt Technologies</p>
+                        </div>
+                        <!-- column end -->
+                    </div>
+                    <!-- flex-container end -->
+                </div>
+                <!-- container end -->
+            </div>
+            <!-- flex-min-height-inner end -->
+        </section>
+        <!-- flex-min-height-box end -->
+
+        <!-- section start -->
+        <section class="light-bg-1 bottom-padding-30 top-padding-120" data-midnight="black">
+            <!-- container start -->
+            <div data-animation-container class="container small bottom-padding-60 text-center">
+                <h2 data-animation-child class="large-title text-height-10 text-color-1 overlay-anim-box2" data-animation="overlay-anim2">We are specialized In</h2><br>
+                <p data-animation-child class="fade-anim-box tr-delay02 text-color-1 xsmall-title-oswald top-margin-5" data-animation="fade-anim">We Offer Best Solutions</p>
+            </div>
+            <!-- container end -->
+
+            <!-- bottom-padding-90 start -->
+            <div class="bottom-padding-90">
+                <!-- portfolio-content start -->
+                <div class="portfolio-content flex-min-height-box">
+                    <!-- portfolio-content-inner start -->
+                    <div class="portfolio-content-inner flex-min-height-inner">
+                        <!-- flex-container start -->
+                        <div class="flex-container container small">
+                            <!-- column start -->
+                            <div data-animation-container class="six-columns">
+                                <div class="content-right-margin-40">
+                                    <span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">artificial intelligence</span>
+                                    <h3 class="title-style text-color-1">
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">facial   </span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">recognition</span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">technology</span>
+                                    </h3>
+                                    <p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">
+                                        Facial recognition technology in conjunction with closed-circuit television (CCTV) systems has gained popularity in various applications, including security, access control, and surveillance.</p>
+
+                                    <div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+                                        <a href="" class="arrow-btn pointer-large animsition-link">Read more</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- column end -->
+                            <!-- column start -->
+                            <div class="six-columns top-padding-60">
+                                <a href="" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+                                    <div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/P1.avif)"></div>
+                                </a>
+                            </div>
+                            <!-- column end -->
+                        </div>
+                        <!-- flex-container end -->
+                    </div>
+                    <!-- portfolio-content-inner end -->
+                </div>
+                <!-- portfolio-content end -->
+            </div>
+            <!-- bottom-padding-90 end -->
+
+            <!-- bottom-padding-90 start -->
+            <div class="bottom-padding-90">
+                <!-- portfolio-content start -->
+                <div class="portfolio-content flex-min-height-box">
+                    <!-- portfolio-content-inner start -->
+                    <div class="portfolio-content-inner flex-min-height-inner">
+                        <!-- flex-container start -->
+                        <div class="flex-container reverse container small">
+                            <!-- column start -->
+                            <div class="six-columns top-padding-60">
+                                <a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+                                    <div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/P2.jpeg)"></div>
+                                </a>
+                            </div>
+                            <!-- column end -->
+                            <!-- column start -->
+                            <div data-animation-container class="six-columns">
+                                <div class="content-left-margin-40">
+                                    <span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">artificial intelligence</span>
+                                    <h3 class="title-style text-color-1">
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Emotion </span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">detection</span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">technology</span>
+                                    </h3>
+                                    <p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Emotion detection using CCTV cameras is an application of computer vision and artificial intelligence (AI) technologies. It involves analyzing the facial expressions and body language of individuals captured by CCTV cameras to infer their emotional states</p>
+
+                                    <div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+                                        <a href="" class="arrow-btn pointer-large animsition-link">Read more</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- column end -->
+                        </div>
+                        <!-- flex-container end -->
+                    </div>
+                    <!-- portfolio-content-inner end -->
+                </div>
+                <!-- portfolio-content end -->
+            </div>
+            <!-- bottom-padding-90 end -->
+
+            <!-- bottom-padding-90 start -->
+            <div class="bottom-padding-90">
+                <!-- portfolio-content start -->
+                <div class="portfolio-content flex-min-height-box">
+                    <!-- portfolio-content-inner start -->
+                    <div class="portfolio-content-inner flex-min-height-inner">
+                        <!-- flex-container start -->
+                        <div class="flex-container container small">
+                            <!-- column start -->
+                            <div data-animation-container class="six-columns">
+                                <div class="content-right-margin-40">
+                                    <span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">artificial intelligence</span>
+                                    <h3 class="title-style text-color-1">
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Vehicle </span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">Tracking</span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Systems</span>
+                                    </h3>
+                                    <p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">Vehicle and bus tracking systems have become indispensable tools for fleet management across various industries, including public transportation, logistics, construction, and emergency services. They not only optimize operations but also contribute to safety, cost savings, and environmental sustainability.</p>
+
+                                    <div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+                                        <a href="" class="arrow-btn pointer-large animsition-link">Read more</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- column end -->
+                            <!-- column start -->
+                            <div class="six-columns top-padding-60">
+                                <a href="" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+                                    <div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/P3.jpeg)"></div>
+                                </a>
+                            </div>
+                            <!-- column end -->
+                        </div>
+                        <!-- flex-container end -->
+                    </div>
+                    <!-- portfolio-content-inner end -->
+                </div>
+                <!-- portfolio-content end -->
+            </div>
+            <!-- bottom-padding-90 end -->
+
+            <!-- bottom-padding-90 start -->
+            <div class="bottom-padding-90">
+                <!-- portfolio-content start -->
+                <div class="portfolio-content flex-min-height-box">
+                    <!-- portfolio-content-inner start -->
+                    <div class="portfolio-content-inner flex-min-height-inner">
+                        <!-- flex-container start -->
+                        <div class="flex-container reverse container small">
+                            <!-- column start -->
+                            <div class="six-columns top-padding-60">
+                                <a href="project.html" class="portfolio-content-bg-box pointer-large hover-box hidden-box animsition-link">
+                                    <div class="portfolio-content-bg hover-img overlay-anim-box2 overlay-dark-bg-2" data-animation="overlay-anim2" style="background-image:url(assets/images/projects/P3.webp)"></div>
+                                </a>
+                            </div>
+                            <!-- column end -->
+                            <!-- column start -->
+                            <div data-animation-container class="six-columns">
+                                <div class="content-left-margin-40">
+                                    <span class="small-title-oswald red-color overlay-anim-box2" data-animation="overlay-anim2">artificial intelligence</span>
+                                    <h3 class="title-style text-color-1">
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay01" data-animation="overlay-anim2">Student</span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay02" data-animation="overlay-anim2">Tracking</span><br>
+                                        <span data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 tr-delay03" data-animation="overlay-anim2">Systems</span>
+                                    </h3>
+                                    <p data-animation-child class="p-style-small text-color-2 fade-anim-box tr-delay04" data-animation="fade-anim">
+                                        Student tracking systems are designed to monitor and manage the whereabouts and activities of students within educational institutions, ensuring their safety, improving efficiency, and providing valuable data for educational purposes. These systems can leverage a variety of technologies, including GPS, RFID (Radio-Frequency Identification), and mobile apps, and may incorporate elements of artificial intelligence for data analysis.</p>
+
+                                    <div data-animation-child class="arrow-btn-box top-margin-30 fade-anim-box tr-delay05" data-animation="fade-anim">
+                                        <a href="" class="arrow-btn pointer-large animsition-link">Read more</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- column end -->
+                        </div>
+                        <!-- flex-container end -->
+                    </div>
+                    <!-- portfolio-content-inner end -->
+                </div>
+                <!-- portfolio-content end -->
+            </div>
+            <!-- bottom-padding-90 end -->
+        </section>
+        <!-- section end -->
+
+        <!-- section start -->
+        <section class="dark-bg-2">
+            <!-- container start -->
+            <div class="container small top-bottom-padding-120">
+                <!-- medium-title start -->
+                <h2 data-animation-container class="medium-title">
+                    <span data-animation-child class="title-fill" data-animation="title-fill-anim" data-text="Fine Folks">Fine Folks</span><br>
+                    <span data-animation-child class="title-fill tr-delay01" data-animation="title-fill-anim" data-text="Our">Our</span><br>
+                    <span data-animation-child class="title-fill tr-delay02" data-animation="title-fill-anim" data-text="Technologies">Technologies</span>
+                </h2>
+                <!-- medium-title end -->
+
+                <!-- client-list start -->
+                <div class="skill-content">
+                    <div class="row">
+                        <i style="color: #2074e3;"class='bx bxl-python'></i>
+                        <h3 style="color: #2074e3;">Python</h3>
+                    </div>
+                    <div class="row">
+                        <i style="color: #2074e3;"class='bx bxl-django'></i>
+                        <h3 style="color: #2074e3;">Django</h3>
+                    </div>
+                    <div class="row">
+                        <i style="color: #2074e3;" class='bx bxl-javascript'></i>
+                        <h3 style="color: #2074e3;"> Javascript</h3>
+                    </div>
+                    <div class="row">
+                        <i style="color: #2074e3;" class='bx bxl-github'></i>
+                        <h3 style="color: #2074e3;">Github</h3>
+                    </div>
+                    <div class="row">
+                        <i style="color: #2074e3;"class='bx bxl-adobe'></i>
+                        <h3 style="color: #2074e3;">Adobe Photoshop</h3>
+                    </div>
+                    <div class="row">
+                        <i style="color: #2074e3;"class='bx bxl-figma'></i>
+                        <h3 style="color: #2074e3;"> Figma</h3>
+                    </div>
+                    <div class="row">
+                        <i style="color: #2074e3;" class='bx bxl-html5'></i>
+                        <h3 style="color: #2074e3;">HTML</h3>
+                    </div>
+                    <div class="row">
+                        <i style="color: #2074e3;"class='bx bxl-css3' ></i>
+                        <h3 style="color: #2074e3;">Css</h3>
+                    </div>
+            
+                </div>
+                <!-- client-list end -->
+            </div>
+            <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!-- light-bg-2 start -->
+   
+        <!-- light-bg-2 end -->
+
+        <!-- video-content-bg start -->
+        <!-- <div class="video-content-bg" style="background-image:url(assets/images/backgrounds/business-calligraphy-chinese-lanterns-1455969.jpg)">
+            <div class="bg-overlay"></div>
+            <a href="https://www.youtube.com/watch?v=9TGlc0Fufgk" class="video-play-button popup-youtube pointer-large">
+					<span></span>
+				</a>
+        </div> -->
+        <!-- video-content-bg end -->
+
+        <!-- latest-news start -->
+    
+        <!-- latest-news end -->
+    </main>
+    <!-- animsition-overlay end -->
+
+    <!-- footer start -->
+    <footer class="footer dark-bg-1">
+        <!-- flex-container start -->
+        <div class="flex-container container top-bottom-padding-90">
+            <!-- column start -->
+            <div class="two-columns bottom-padding-60">
+                <div class="content-right-margin-10 footer-center-mobile">
+                   <h1 style="color: white;">Jezt</h1>
+                </div>
+            </div>
+            <!-- column end -->
+            <!-- column start -->
+            <div class="three-columns bottom-padding-60">
+                <div class="content-left-right-margin-10">
+                    <ul class="footer-menu text-color-4">
+                        <li><a class="pointer-large animsition-link small-title-oswald hover-color active" href="index.html">Home</a></li>
+                        <li><a class="pointer-large animsition-link small-title-oswald hover-color" href="">About</a></li>
+                        <li><a class="pointer-large animsition-link small-title-oswald hover-color" href="">Services</a></li>
+                        <li><a class="pointer-large animsition-link small-title-oswald hover-color" href="">Portfolio</a></li>
+                        <li><a class="pointer-large animsition-link small-title-oswald hover-color" href="">Blog</a></li>
+                        <li><a class="pointer-large animsition-link small-title-oswald hover-color" href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- column end -->
+            <!-- column start -->
+            <div class="four-columns bottom-padding-60">
+                <div class="content-left-right-margin-10 footer-center-mobile">
+                    <ul class="footer-information text-color-4">
+                        <li><i class="far fa-envelope"></i><a href="#" class="xsmall-title-oswald">.</a></li>
+                        <li><i class="fas fa-mobile-alt"></i><a href="#" class="xsmall-title-oswald">Phone Number</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i><a href="#" class="xsmall-title-oswald text-height-17">Address<br><span>East Victoria 2006 UK</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- column end -->
+            <!-- column start -->
+            <div class="three-columns bottom-padding-60">
+                <div class="content-left-margin-10">
+                    <ul class="footer-social">
+                        <li>
+                            <div class="flip-btn-box">
+                                <a href="#" class="flip-btn pointer-small" data-text="Instagram">Instagram</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flip-btn-box">
+                                <a href="#" class="flip-btn pointer-small" data-text="Facebook">Facebook</a>
+                            </div>
+                        </li>
+                
+                    </ul>
+                </div>
+            </div>
+            <!-- column end -->
+            <!-- column start -->
+            <div class="twelve-columns">
+                <p class="p-letter-style text-color-4 footer-copyright">&copy; Copyright 2023 Jezt. Theme by <a href="#">Jezt Technologies</a></p>
+            </div>
+            <!-- column end -->
+        </div>
+        <!-- flex-container end -->
+    </footer>
+    <!-- footer end -->
+
+    <!-- scripts -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

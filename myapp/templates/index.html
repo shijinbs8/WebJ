@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Jezt</title>
+    <link href="{% static 'imgs/favicon.ico' %}" rel="icon">
+
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
@@ -68,14 +70,10 @@
   background-color: rgba(0, 0, 0, 0.9); /* Adjust the background color as needed */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual effect */
 }
-body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+
 
         .slider-container {
-            width: 5000px;
+            width:10000px;
             /* Adjust this to your desired width */
             overflow: hidden;
         }
@@ -88,13 +86,13 @@ body {
         }
 
         .card {
-            width: 300px;
+            width: 400px;
             /* Adjust the width as needed */
-            height: 250px;
+           
             /* Adjust the height as needed */
             padding: 70px;
             background-color: #f1f1f1;
-            border: 1px solid #ddd;
+            border: 1px solid b;
             text-align: center;
             margin-right: 10px;
             
@@ -129,7 +127,7 @@ body {
     <!-- to-top-btn end -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="font-size: xx-large;">Jezt</a>
+          <a class="navbar-brand" href="/" style="font-size: xx-large;">Jezt</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -142,7 +140,7 @@ body {
                 <a class="nav-link" href="{%url 'about-us' %}" id="social">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="social">Our Team</a>
+                <a class="nav-link" href="{%url 'team' %}" id="social">Our Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{%url 'chatbot'%}" id="social">Try Us</a>

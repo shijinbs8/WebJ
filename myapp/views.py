@@ -21,7 +21,7 @@ def about_us(request):
     return render(request,'about_us.html')
 
 def technology(request):
-    return render(request,'technology.html')
+    return render(request,'Technology.html')
 
 
 # Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI API key
@@ -48,7 +48,7 @@ def Ai(request):
 
         # return JsonResponse({"response": response})  # Return JSON response
 
-    return render(request, 'Ai_Teacher.html', {'messages': messages})
+    return render(request, 'a.html', {'messages': messages})
 
 def clear_chat_history(request):
     ChatMessage.objects.all().delete()  # Delete all ChatMessage objects
@@ -128,3 +128,6 @@ def download_csv(request):
 
 def trial(request):
     return render(request, 'trial.html')
+
+def Team(request):
+    return render(request,'team.html')

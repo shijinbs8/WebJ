@@ -27,4 +27,5 @@ urlpatterns = [
     path('contact-us/',views.request_callback, name='contact-us'),
     path('csv/', views.download_csv, name='download_csv'),
     path('try',views.trial, name='trial'),
+    path('team/',views.Team,name='team'),
 ]
